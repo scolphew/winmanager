@@ -1314,3 +1314,16 @@ endfunction
 let &cpo = s:cpo_save
 unlet s:cpo_save
 " vim:ts=4:noet:sw=4
+
+
+
+"Used by winmanager 
+let g:NERDTree_title = "[NERDTree]"
+function! NERDTree_Start()
+	exe 'q'
+	exe 'NERDTree'
+endfunction
+function! NERDTree_IsValid()
+	return 1
+endfunction
+
